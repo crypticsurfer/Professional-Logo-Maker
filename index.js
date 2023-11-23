@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 var inquirer = require('inquirer');
-const generateLogo = require('./lib/shapes');
+const shapes = require('./lib/shapes');
+const generateLogo = shapes.generateLogo;
 const path = require("path");
 const fs = require("fs");
 var validateColor = require("validate-color").default;

@@ -3,6 +3,7 @@ var inquirer = require('inquirer');
 const generateLogo = require('./lib/shapes');
 const path = require("path");
 const fs = require("fs");
+var validateColor = require("validate-color").default;
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -36,7 +37,7 @@ const questions = [
             type: 'list',
             name: 'shape',
             message: "What's the shape of your logo?",
-            choices: ["Triangle", "Circle", "Square", "Star"]
+            choices: ["Triangle", "Circle", "Square"]
         },
         {
             type: 'input',

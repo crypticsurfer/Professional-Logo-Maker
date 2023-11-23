@@ -56,7 +56,7 @@ const questions = [
     ];
 
 
-// TODO: Create a function to write README file
+// TODO: Create a function to create logo
 function createLogo(fileName, data) {
     console.log("test1")
     const filePath = path.join(fileName)

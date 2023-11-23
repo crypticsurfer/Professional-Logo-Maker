@@ -10,11 +10,27 @@ const questions = [
           type: 'input',
           name: 'text',
           message: "What's the text of your logo",
+          validate(input) {
+            if (input.length > 3) {
+              throw Error('The text of your logo must be three characters or less');
+            }
+            else {
+              return true;
+            }
+          },
         },
         {
           type: 'input',
           name: 'text-color',
           message: "What's your text's color",
+          validate(input) {
+            if (validateColor(input)) {
+              return true;
+            }
+            else {
+              throw Error('Must be a valid color or hex');
+            }
+          },
         },
         {
             type: 'list',
@@ -26,6 +42,14 @@ const questions = [
             type: 'input',
             name: 'shape-color',
             message: "What is your shape's color?",
+            validate(input) {
+                if (validateColor(input)) {
+                  return true;
+                }
+                else {
+                  throw Error('Must be a valid color or hex');
+                }
+              },
         },
     ];
 

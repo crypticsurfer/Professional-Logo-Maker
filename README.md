@@ -14,7 +14,8 @@ Clone the repo to your machine of choice and run "npm install" in a bash termina
   ## Usage
 Run "node index.js" from the bash terminal and fill in the prompts to create the logo. The test should look like the test below after creating the logo.
 ![svg-logo-test](https://github.com/crypticsurfer/Professional-Logo-Maker/assets/130003418/f099a2e3-8088-46c9-bf46-0501becce201)
-A video of the application being used can be viewed [here]
+All of the examples asked for can be found in the examples folder!
+A video of the application being used can be viewed [here](https://watch.screencastify.com/v/FNQBjYjo9y6omqCH1VMv)
   ## License
   * [License](https://opensource.org/license/mit/)
   This app was licensed under MIT license
